@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<products>
+    <computers>
+        <type>Desktop</type>
+        <name>Dell Xps</name>
+        <ram>8-16Gb</ram>
+        <processor>I5</processor>
+        <videocard>NVIDIA 950 ti</videocard>
+        <touch>False</touch>
+        <hdd>1TB</hdd>
+    </computers>
+    
+</products>
 <root />
