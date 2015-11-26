@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <products>
+    
     <computers>
         <type>Desktop</type>
         <name>Dell Xps</name>
@@ -8,7 +10,7 @@
         <videocard>NVIDIA 950 ti</videocard>
         <touch>False</touch>
         <hdd>1TB</hdd>
+        <kfk></kfk>
     </computers>
     
 </products>
-<root />
