@@ -3,16 +3,26 @@
 <xsl:template match="/">
   <html>
   <body>
-  <h2>Bookstore</h2>
+  <h2>Computers</h2>
     <table border="1">
-      <tr bgcolor="#9acd32">
+      <tr bgcolor="#d3d3d3">
         <th style="text-align:left">Type</th>
         <th style="text-align:left">Name</th>
+        <th style="text-align:left">RAM</th>
+        <th style="text-align:left">Processor</th>
+        <th style="text-align:left">Videocard</th>
+        <th style="text-align:left">HDD</th>
+        <th style="text-align:left">Price</th>
       </tr>
-      <xsl:for-each select="products/computers">
+      <xsl:for-each select="products/computers/computer">
       <tr>
         <td><xsl:value-of select="type"/></td>
         <td><xsl:value-of select="name"/></td>
+        <td><xsl:value-of select="ram"/></td>
+        <td><xsl:value-of select="processor"/></td>
+        <td><xsl:value-of select="videocard"/></td>
+        <td><xsl:value-of select="hdd"/></td>
+        <td><xsl:value-of select="price"/></td>
       </tr>
       </xsl:for-each>
     </table>
