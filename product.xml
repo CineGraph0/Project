@@ -10,7 +10,7 @@
          <videocard>NVIDIA 950 ti</videocard>
          <touch>False</touch>
          <hdd>1TB</hdd>
-         <price>"&#8364;"850</price>
+         <price>€850</price>
       </computer>
       <computer id="c2">
          <type>All In One</type>
