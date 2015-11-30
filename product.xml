@@ -1,129 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="product.xslt"?>
 <products>
-   <computers id="c1">
-      <type>Desktop</type>
-      <name>Dell Xps</name>
-      <ram>8-16Gb</ram>
-      <processor>I5</processor>
-      <videocard>NVIDIA 950 ti</videocard>
-      <touch>False</touch>
-      <hdd>1TB</hdd>
-      <price>€850</price>
+   <computers>
+      <computer id="c1">
+         <type>Desktop</type>
+         <name>Dell Xps</name>
+         <ram>8-16Gb</ram>
+         <processor>I5</processor>
+         <videocard>NVIDIA 950 ti</videocard>
+         <touch>False</touch>
+         <hdd>1TB</hdd>
+         <price>€850</price>
+      </computer>
+      <computer id="c2">
+         <type>All In One</type>
+         <name>HP</name>
+         <ram>8Gb</ram>
+         <processor>I3</processor>
+         <videocard>Intel HD 4500</videocard>
+         <touch>True</touch>
+         <hdd>1TB</hdd>
+         <price>€999</price>
+      </computer>
+      <computer id="c3">
+         <type>Laptop</type>
+         <name>MacBook Air</name>
+         <ram>4-8Gb</ram>
+         <processor>IOS</processor>
+         <videocard>Intel HD 4500</videocard>
+         <touch>False</touch>
+         <hdd>128 SSD</hdd>
+         <price>€1,115</price>
+      </computer>
+      <computer id="c4">
+         <type>Laptop</type>
+         <name>Surface Book</name>
+         <ram>8-16Gb</ram>
+         <processor>I5</processor>
+         <videocard>NIVIDIA GeForce</videocard>
+         <touch>True</touch>
+         <hdd>256 SSD</hdd>
+         <price>€1,800</price>
+      </computer>
+      <computer id="c5">
+         <type>Desktop</type>
+         <name>Acer Predator</name>
+         <ram>12Gb</ram>
+         <processor>I5</processor>
+         <videocard>NIVIDIA GeForce</videocard>
+         <touch>False</touch>
+         <hdd>1Tb</hdd>
+         <price>€1,160</price>
+      </computer>
    </computers>
-   <computers id="c2">
-      <type>All In One</type>
-      <name>HP</name>
-      <ram>8Gb</ram>
-      <processor>I3</processor>
-      <videocard>Intel HD 4500</videocard>
-      <touch>True</touch>
-      <hdd>1TB</hdd>
-      <price>€999</price>
-   </computers>
-   <computers id="c3">
-      <type>Laptop</type>
-      <name>MacBook Air</name>
-      <ram>4-8Gb</ram>
-      <processor>IOS</processor>
-      <videocard>Intel HD 4500</videocard>
-      <touch>False</touch>
-      <hdd>128 SSD</hdd>
-      <price>€1,115</price>
-   </computers>
-   <computers id="c4">
-      <type>Laptop</type>
-      <name>Surface Book</name>
-      <ram>8-16Gb</ram>
-      <processor>I5</processor>
-      <videocard>NIVIDIA GeForce</videocard>
-      <touch>True</touch>
-      <hdd>256 SSD</hdd>
-      <price>€1,800</price>
-   </computers>
-   <computers id="c5">
-      <type>Desktop</type>
-      <name>Acer Predator</name>
-      <ram>12Gb</ram>
-      <processor>I5</processor>
-      <videocard>NIVIDIA GeForce</videocard>
-      <touch>False</touch>
-      <hdd>1Tb</hdd>
-      <price>€1,160</price>
-   </computers>
-   <tablets id="t1">
-      <type>2 In One</type>
-      <name>HP Pavilion X2</name>
-      <ram>2Gb</ram>
-      <processor>Atom Quad Core</processor>
-      <hdd>32Gb</hdd>
-      <resolution>764</resolution>
-      <price>€280</price>
+   
+   <tablets>
+      <tablet id="t1">
+         <type>2 In One</type>
+         <name>HP Pavilion X2</name>
+         <ram>2Gb</ram>
+         <processor>Atom Quad Core</processor>
+         <hdd>32Gb</hdd>
+         <resolution>764</resolution>
+         <price>€280</price>
+      </tablet>
+      <tablet id="t2">
+         <type>2 In One</type>
+         <name>Asus Transform Book</name>
+         <ram>2Gb</ram>
+         <processor>Atom Quad Core</processor>
+         <hdd>64Gb</hdd>
+         <resolution>764</resolution>
+         <price>€395</price>
+      </tablet>
+      <tablet id="t3">
+         <type>Tablet</type>
+         <name>Samsung</name>
+         <ram>2Gb</ram>
+         <processor>Atom Quad Core</processor>
+         <hdd>16Gb</hdd>
+         <resolution>1080</resolution>
+         <price>€450</price>
+      </tablet>
+      <tablet id="t4">
+         <type>Tablet</type>
+         <name>Ausus Zen Pool</name>
+         <ram>1Gb</ram>
+         <processor>Atom Quad Core</processor>
+         <hdd>16Gb</hdd>
+         <resolution>1080</resolution>
+         <price>€219</price>
+      </tablet>
+      <tablet id="t5">
+         <type>Tablet</type>
+         <name>IPad Pro</name>
+         <ram>2Gb</ram>
+         <processor>A9X</processor>
+         <hdd>32Gb</hdd>
+         <resolution>2048</resolution>
+         <price>€929</price>
+      </tablet>
    </tablets>
-   <tablets id="t2">
-      <type>2 In One</type>
-      <name>Asus Transform Book</name>
-      <ram>2Gb</ram>
-      <processor>Atom Quad Core</processor>
-      <hdd>64Gb</hdd>
-      <resolution>764</resolution>
-      <price>€395</price>
-   </tablets>
-   <tablets id="t3">
-      <type>Tablet</type>
-      <name>Samsung</name>
-      <ram>2Gb</ram>
-      <processor>Atom Quad Core</processor>
-      <hdd>16Gb</hdd>
-      <resolution>1080</resolution>
-      <price>€450</price>
-   </tablets>
-   <tablets id="t4">
-      <type>Tablet</type>
-      <name>Ausus Zen Pool</name>
-      <ram>1Gb</ram>
-      <processor>Atom Quad Core</processor>
-      <hdd>16Gb</hdd>
-      <resolution>1080</resolution>
-      <price>€219</price>
-   </tablets>
-   <tablets id="t5">
-      <type>Tablet</type>
-      <name>IPad Pro</name>
-      <ram>2Gb</ram>
-      <processor>A9X</processor>
-      <hdd>32Gb</hdd>
-      <resolution>2048</resolution>
-      <price>€929</price>
-   </tablets>
-   <external id="e1">
-      <type>Hard Drive</type>
-      <name>Toshiba</name>
-      <size>1Tb</size>
-      <format>Windows</format>
-   </external>
-   <external id="e2">
-      <type>Hard Drive</type>
-      <name>WD</name>
-      <size>2Tb</size>
-      <format>MAC</format>
-   </external>
-   <external id="e3">
-      <type>Hard Drive</type>
-      <name>WD</name>
-      <size>1Tb</size>
-      <format>Windows</format>
-   </external>
-   <external id="e4">
-      <type>Hard Drive</type>
-      <name>PNY</name>
-      <size>1Tb</size>
-      <format>Windows</format>
-   </external>
-   <external id="e5">
-      <type>Hard Drive</type>
-      <name>Sardisk</name>
-      <size>2Tb</size>
-      <format>Windows</format>
-   </external>
+   <externals>
+      <external id="e1">
+         <type>Hard Drive</type>
+         <name>Toshiba</name>
+         <size>1Tb</size>
+         <format>Windows</format>
+      </external>
+      <external id="e2">
+         <type>Hard Drive</type>
+         <name>WD</name>
+         <size>2Tb</size>
+         <format>MAC</format>
+      </external>
+      <external id="e3">
+         <type>Hard Drive</type>
+         <name>WD</name>
+         <size>1Tb</size>
+         <format>Windows</format>
+      </external>
+      <external id="e4">
+         <type>Hard Drive</type>
+         <name>PNY</name>
+         <size>1Tb</size>
+         <format>Windows</format>
+      </external>
+      <external id="e5">
+         <type>Hard Drive</type>
+         <name>Sardisk</name>
+         <size>2Tb</size>
+         <format>Windows</format>
+      </external>
+   </externals>
 </products>
