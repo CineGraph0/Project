@@ -75,7 +75,7 @@
       </tablet>
       <tablet id="t3">
          <type>Tablet</type>
-         <name>Samsung</name>
+         <name>Samsung Galaxy</name>
          <ram>2Gb</ram>
          <processor>Atom Quad Core</processor>
          <hdd>16Gb</hdd>
@@ -84,7 +84,7 @@
       </tablet>
       <tablet id="t4">
          <type>Tablet</type>
-         <name>Ausus Zen Pool</name>
+         <name>Ausus Zen Pad</name>
          <ram>1Gb</ram>
          <processor>Atom Quad Core</processor>
          <hdd>16Gb</hdd>
@@ -128,7 +128,7 @@
       </external>
       <external id="e5">
          <type>Hard Drive</type>
-         <name>Sardisk</name>
+         <name>Sandisk</name>
          <size>2Tb</size>
          <format>Windows</format>
       </external>
