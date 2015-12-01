@@ -23,6 +23,33 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+     <script type = "text/javascript">
+            var XMLHttpRequestObject = false;
+            
+            if(window.XMLHttpRequest){
+                XMLHttpRequestObject = new XMLHttpRequest();
+            }
+            
+            else if(window.ActiveObject){
+                XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            
+            function getData(datasource,divID){
+                if(XMLHttpRequestObject){
+                    var object = document.getElementById(divID);
+                    XMLHttpRequestObject.open("GET",datasource,true);
+                    XMLHttpRequestObject.onreadystatechange=
+                    function(){
+                        if(XMLHttpRequestObject.readyState==4 && XMLHttpRequestObject.status==200){
+                            object.innerHTML=XMLHttpRequestObject.responseText;
+                        }
+                    };
+                    XMLHttpRequestObject.send(null);
+                }
+            }
+            
+    </script>
 
 </head>
 
@@ -177,7 +204,7 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="img/Macbook_air_1.png" alt="">
+                            <img src="img/Macbook_air_1.png" onmouseover="getData('mac.txt','ajaxDesc')" alt="">
                             <div class="caption">
                                 <h4 class="pull-right">$84.99</h4>
                                 <h4><a href="#">Macbook Air</a>
