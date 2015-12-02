@@ -53,7 +53,6 @@
          <price>€1,160</price>
       </computer>
    </computers>
-   
    <tablets>
       <tablet id="t1">
          <type>2 In One</type>
@@ -132,5 +131,4 @@
          <size>2Tb</size>
          <format>Windows</format>
       </external>
-   </externals>
-</products>
+ </products>
