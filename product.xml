@@ -131,4 +131,5 @@
          <size>2Tb</size>
          <format>Windows</format>
       </external>
- </products>
+   </externals>
+<secondhand><type>desktop</type><name>mac</name><ram>4</ram><price>desktop</price></secondhand></products>
