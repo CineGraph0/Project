@@ -4,11 +4,11 @@
  */
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
-//get author from form
+//get entry from form
 $type = $_POST["type"];
 $name = $_POST["name"];
 $ram = $_POST["ram"];
-$price = $_POST["type"];
+$price = $_POST["price"];
 echo $type;
 
 if (file_exists('product.xml')) {
@@ -32,6 +32,10 @@ if (file_exists('product.xml')) {
     $newChild->addChild('name', $name);
     $newChild->addChild('ram', $ram);
     $newChild->addChild('price', $price);
+    
+    
+    $title = $newChild;
+    $description = $type+","+$ram+","+$price;
   
     //transforming the object in xml format
     $xmlFormat = $xml->asXML();
@@ -44,8 +48,21 @@ if (file_exists('product.xml')) {
 
 file_put_contents('product.xml', $xml->saveXML());
 
+
 } else {
     exit('Failed to open product.xml.'); 
 }
-    
+file_put_contents('product.xml', $xml->asXML());
+    writeRSS();
+    function writeRSS(){
+    if (file_exists('rss.xml')) {
+    //loads the xml and returns a simplexml object
+    $rssxml = simplexml_load_file('rss.xml');
+    $newChild = $rssxml->channel->addChild('item');
+    $newChild->addChild('title', $title);
+    $newChild->addChild('link', 'product.xml');
+    $newChild->addChild('description', $description);
+    file_put_contents('rss.xml', $rssxml->asXML());
+}
+}
 ?>
