@@ -1,13 +1,6 @@
 
 <?php
-/*function getPHP(){
-    $.ajax({
-        url: 'product.php'})
-        .done function(data) {
-            $('#gallery').html(data);
-        }
-    ;
-}*/
+
 // Load the XML source
 $xml = new DOMDocument;
 $xml->load('product.xml');
