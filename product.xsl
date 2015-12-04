@@ -2,6 +2,9 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
   <html>
+    <style>
+      table{ height: 100%; width: 100%; margin-left:-10px;}
+    </style>
   <body>
   <h2>Computers</h2>
     <table border="1">

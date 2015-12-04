@@ -132,4 +132,4 @@
          <format>Windows</format>
       </external>
    </externals>
-<secondhand><title/><type>Desktop</type><name>IMAC</name><ram>16Gb</ram><price>1200</price></secondhand></products>
+<secondhand><type>desktop</type><name>dell</name><ram>4Gb</ram><price>$1000</price></secondhand><secondhand><type>desktop</type><name>IMAC</name><ram>4Gb</ram><price>$1000</price></secondhand><secondhand><type>desktop</type><name>dell</name><ram>4Gb</ram><price>$1000</price></secondhand></products>

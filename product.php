@@ -1,6 +1,5 @@
 
 <?php
-
 // Load the XML source
 $xml = new DOMDocument;
 $xml->load('product.xml');
@@ -14,3 +13,5 @@ $proc->importStyleSheet($xsl); // attach the xsl rules
 
 echo $proc->transformToXML($xml);
 ?>
+
+

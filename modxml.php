@@ -2,6 +2,8 @@
 /*
  * Loading a XML from a file, adding new elements and editing elements
  */
+ 
+
 ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 //get entry from form
@@ -10,6 +12,8 @@ $name = $_POST["name"];
 $ram = $_POST["ram"];
 $price = $_POST["price"];
 echo $type;
+
+
 
 if (file_exists('product.xml')) {
     //loads the xml and returns a simplexml object
@@ -34,8 +38,8 @@ if (file_exists('product.xml')) {
     $newChild->addChild('price', $price);
     
     
-    $title = $newChild;
-    $description = $type+","+$ram+","+$price;
+   // $title = $name;
+    //$description = $type+","+$ram+","+$price;
   
     //transforming the object in xml format
     $xmlFormat = $xml->asXML();
@@ -54,15 +58,23 @@ file_put_contents('product.xml', $xml->saveXML());
 }
 file_put_contents('product.xml', $xml->asXML());
     writeRSS();
-    function writeRSS(){
+function writeRSS(){
     if (file_exists('rss.xml')) {
-    //loads the xml and returns a simplexml object
-    $rssxml = simplexml_load_file('rss.xml');
-    $newChild = $rssxml->channel->addChild('item');
-    $newChild->addChild('title', $title);
-    $newChild->addChild('link', 'product.xml');
-    $newChild->addChild('description', $description);
-    file_put_contents('rss.xml', $rssxml->asXML());
-}
+        $type = $_POST["type"];
+        $name = $_POST["name"];
+        $ram = $_POST["ram"];
+        $price = $_POST["price"];
+        
+        $title = $name;
+        $description = $type .", ".$ram.", ".$price;
+        
+        //loads the xml and returns a simplexml object
+        $rssxml = simplexml_load_file('rss.xml');
+        $newChild = $rssxml->channel->addChild('item');
+        $newChild->addChild('title', $title);
+        $newChild->addChild('link', 'product.xml');
+        $newChild->addChild('description', $description);
+        file_put_contents('rss.xml', $rssxml->asXML());
+    }
 }
 ?>

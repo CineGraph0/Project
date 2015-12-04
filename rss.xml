@@ -4,5 +4,5 @@
         
         
         
-    </channel>
+    <item><title>dell</title><link>product.xml</link><description>4</description></item><item><title>IMAC</title><link>product.xml</link><description>4</description></item><item><title>dell</title><link>product.xml</link><description>desktop, 4Gb, $1000</description></item></channel>
 </rss>

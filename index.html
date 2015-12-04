@@ -223,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-
+                    </br>
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
                             <img src="img/Asus_zenpad_1.png" alt="">
@@ -248,34 +248,10 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                        <div id="Products_container">
-                           <button type="button" onclick="loadDoc()">Get my CD collection</button>
+                           <button type="button" onclick="loadDoc()">Click Me</button>
                            <div id="Products_php">
-                               <script>
-                                function loadDoc() {
-                                  var xhttp = new XMLHttpRequest();
-                                  xhttp.onreadystatechange = function() {
-                                    if (xhttp.readyState == 4 && xhttp.status == 200) {
-                                      myFunction(xhttp);
-                                    }
-                                  };
-                                  xhttp.open("GET", "product.xml", true);
-                                  xhttp.send();
-                                }
-                                function myFunction(xml) {
-                                  var i;
-                                  var xmlDoc = xml.responseXML;
-                                  var table="<tr><th>Artist</th><th>Title</th></tr>";
-                                  var x = xmlDoc.getElementsByTagName("CD");
-                                  for (i = 0; i <x.length; i++) { 
-                                    table += "<tr><td>" +
-                                    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
-                                    "</td><td>" +
-                                    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
-                                    "</td></tr>";
-                                  }
-                                  document.getElementById("demo").innerHTML = table;
-                                }
-                                </script>
+                                
+                               
                            </div>
                        </div>     
                     </div>
@@ -310,6 +286,16 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    
+   <script>
+   function loadDoc(){
+                                $.ajax({
+                                    url: 'product.php'})
+                                    .done (function(data) {
+                                    $('#Products_php').html(data);
+                                    });
+   }
+                                    </script>
 
 </body>
 
