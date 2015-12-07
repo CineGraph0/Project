@@ -1,75 +1,19 @@
-channel title {
- font-size:140%;
-}
+* { margin:0; padding:0; }
 
-channel item title {
- font-size:100%;
-}
+html { display:block; background-color:#000000; padding-bottom:50px; }
+body { font:80% Verdana, sans-serif; color:#000; background:#fff url(pagebg_rss.jpg) top left no-repeat; padding:25px 0 0 35px; }
 
-channel link, channel language, channel copyright, channel managingEditor, channel webMaster, channel docs, channel lastBuildDate {
-    display:none;
-}
-rss {
-    font-family:Verdana, Arial, Helvetica, sans-serif;
-    font-size:0.7em;
-    line-height:130%;
-    margin:1em;
-}
+a { color:#960000; }
+a:hover { text-decoration:none; }
 
-channel title {
-    display:block;
-    padding:0.4em 0.2em;
-    color:#FFF;
-    border-bottom:1px solid black;
-    font-weight:bold;
-    font-size:140%;
-    background-color:#4483C7;
-}
-channel description {
-    display:block;
-    float:left;
-    font-size:130%;
-    font-weight:bold;
-    margin:0.5em;
-}
+h2 { font-weight:normal; border-bottom:1px solid #000000; margin-bottom:0.4em; }
+h2 a { display:block; margin-bottom:0.2em; text-decoration:none; color:#000; }
 
-channel item {
-    background-color:#FFFFEE;
-    border:1px solid #538620;
-    clear:both;
-    display:block;
-    padding:0 0 0.5em;
-    margin:1em;
-}
-channel item title {
-    background-color:#538620;
-    border-bottom-width:0;
-    color:#FFF;
-    display:block;
-    font-size:110%;
-    font-weight:bold;
-    margin:0;
-    padding:0.3em 0.5em;
-}
-channel item description {
-    display: block;
-    float:none;
-    margin:0;
-    text-align: left;
-    padding:0.2em 0.5em 0.4em;
-    color: black;
-    font-size:100%;
-    font-weight:normal;
-}
-channel item link {
-    color:#666;
-    display:block;
-    font-size:86%;
-    padding:0 0.5em;
-}
-channel item pubDate {
-    color:#666;
-    display:block;
-    font-size:86%;
-    padding:0 0.5em;
-}
+div { line-height:1.6em; }
+
+div#content { background:#fff url(logo.jpg) bottom right no-repeat; margin-right:15px; padding:1em 0 55px 0; }
+div#content div { margin:0 1em 1em 0; }
+
+div#explanation { padding:1em 1em 0 1em; border:1px solid #ddd; background:#efefef; margin-right:2em; }
+div#explanation h1 { font-weight:normal; font-size:1.8em; margin-bottom:0.3em; }
+div#explanation p { margin-bottom:1em; }
