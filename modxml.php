@@ -8,14 +8,17 @@ ini_set('display_errors', 'On');
 error_reporting(E_ALL);
 //get entry from form
 $type = $_POST["type"];
-$name = $_POST["name"];
+$cname = $_POST["cname"];
 $ram = $_POST["ram"];
 $price = $_POST["price"];
+$name = $_POST["name"];
+$contact = $_POST["contact"];
 echo $type;
 
 
 
 if (file_exists('product.xml')) {
+    header('Location: sell.html');
     //loads the xml and returns a simplexml object
     $xml = simplexml_load_file('product.xml');
     //print_r($xml);
@@ -33,16 +36,18 @@ if (file_exists('product.xml')) {
     //adding new child to the xml
     $newChild = $xml->addChild('secondhand');
     $newChild->addChild('type', $type);
-    $newChild->addChild('name', $name);
+    $newChild->addChild('computername', $cname);
     $newChild->addChild('ram', $ram);
     $newChild->addChild('price', $price);
+    $newChild->addChild('name', $name);
+    $newChild->addChild('contact', $contact);
     
     
    // $title = $name;
     //$description = $type+","+$ram+","+$price;
   
     //transforming the object in xml format
-    $xmlFormat = $xml->asXML();
+    $xmlFormat = $xml->asXML;
    // echo htmlentities($xmlFormat);
 
     //displaying the element in proper format
@@ -61,12 +66,14 @@ file_put_contents('product.xml', $xml->asXML());
 function writeRSS(){
     if (file_exists('rss.xml')) {
         $type = $_POST["type"];
-        $name = $_POST["name"];
+        $name = $_POST["cname"];
         $ram = $_POST["ram"];
         $price = $_POST["price"];
+        $name = $_POST["name"];
+        $contact = $_POST["contact"];
         
-        $title = $name;
-        $description = $type .", ".$ram.", ".$price;
+        $title = $cname;
+        $description = $type .", ".$ram.", ".$price. ", ".$name.",".$contact;
         
         //loads the xml and returns a simplexml object
         $rssxml = simplexml_load_file('rss.xml');

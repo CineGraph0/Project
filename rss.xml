@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
 <rss version="2.0">
+    
     <channel>
         
         
         
-    <item><title>dell</title><link>product.xml</link><description>desktop, 6Gb, $100</description></item><item><title>dell</title><link>product.xml</link><description>desktop, 6Gb, $100</description></item><item><title>dell</title><link>product.xml</link><description>desktop, 6Gb, $100</description></item></channel>
+    <item><title>dell</title><link>product.xml</link><description>desktop, 6Gb, $100</description></item><item><title>dell</title><link>product.xml</link><description>desktop, 6Gb, $100</description></item><item><title>dell</title><link>product.xml</link><description>desktop, 6Gb, $100</description></item><item><title>Dell XPS</title><link>product.xml</link><description>Laptop, 16Gb, £123</description></item><item><title>MacBook</title><link>product.xml</link><description>Laptop, 4Gb, €999</description></item><item><title>MacBook</title><link>product.xml</link><description>Laptop, 4Gb, €999</description></item><item><title>Dell XPS</title><link>product.xml</link><description>Laptop, 16Gb, €999</description></item><item><title>MacBook Pro</title><link>product.xml</link><description>Laptop, 4, 600</description></item><item><title>Acer</title><link>product.xml</link><description>desktop, 12Gb, €1000</description></item><item><title>Acer</title><link>product.xml</link><description>desktop, 12Gb, €1000</description></item><item><title>Acer</title><link>product.xml</link><description>Laptop, 2.5Gb, 200</description></item><item><title>Mark McDonald</title><link>product.xml</link><description>desktop, 2.5Gb, 200, Mark McDonald,085-1067245</description></item></channel>
 </rss>
