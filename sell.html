@@ -24,8 +24,53 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
      <style>
-        body{ background-image: url("img/skulls.png");}    
+        body{ background-image: url("img/skulls.png");}  
+        #input{ margin-left: 0;}
+        
+        #rss
+        {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 35px;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        #rss iframe 
+        {
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;    
+        }
     </style>
+         <script type = "text/javascript">
+            var XMLHttpRequestObject = false;
+            
+            if(window.XMLHttpRequest){
+                XMLHttpRequestObject = new XMLHttpRequest();
+            }
+            
+            else if(window.ActiveObject){
+                XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            
+            function getData(datasource,divID){
+                if(XMLHttpRequestObject){
+                    var object = document.getElementById(divID);
+                    XMLHttpRequestObject.open("GET",datasource,true);
+                    XMLHttpRequestObject.onreadystatechange=
+                    function(){
+                        if(XMLHttpRequestObject.readyState==4 && XMLHttpRequestObject.status==200){
+                            object.innerHTML=XMLHttpRequestObject.responseText;
+                        }
+                    };
+                    XMLHttpRequestObject.send(null);
+                }
+            }
+            
+    </script>
 </head>
 
 <body>
@@ -117,31 +162,35 @@
                         
                     </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="col-sm-4 col-lg-4 col-md-4" style= "float: left;">
                         <form action = "modxml.php" method = "post">
                             Type: 
-                            <input type="text" name="type" style="margin-left:22px;"/>
-                            </br>
+                            <div id="input"><input type="text" name="type" style=""/></div>
+                            
                             Make:
-                            <input type="text" name="cname" style="margin-left:19px;"/>
-                            </br>
+                            <div id="input"><input type="text" name="cname" style=""/></div>
+                            
                             RAM:
-                            <input type="text" name="ram" style="margin-left:22px;"/>
-                            </br>
+                            <div id="input"><input type="text" name="ram" style=""/></div>
+                            
                             Price: 
-                            <input type="text" name="price" style="margin-left:21px;"/>
-                            </br>
+                            <div id="input"><input type="text" name="price" style=""/></div>
+                            
                             Name: 
-                            <input type="text" name="name" style="margin-left:15px;"/>
-                            </br>
+                            <div id="input"><input type="text" name="name" style=""/></div>
+                            
                             Contact: 
-                            <input type="text" name="contact" style="margin-left:4px;"/>
+                            <div id="input"><input type="text" name="contact" style=""/></div>
                             
                             <input type="submit" value="Submit"/>
                         </form>
                     </div>
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
+                    <div class="col-sm-4 col-lg-4 col-md-4" >
+
+                        </div>
+                    </div>
+                      
                         
                     </div>
 
@@ -189,14 +238,18 @@
                         </div>
                     </div>-->
 
-                    <div class="col-sm-4 col-lg-4 col-md-4">
-                        
-                    </div>
+                   
 
                 </div>
+                     <div class="col-sm-4 col-lg-4 col-md-4" style= "float: right;>
+                        <div id="rss" >
+                            <iframe src="rss.php" height="150px" width="350px" allowfullscreen="" frameborder="2">
+                               <button type="button" onclick="rss1()">RSS</button>
+                             </iframe>
+                        </div>
 
             </div>
-
+                
         </div>
 
     </div>
@@ -223,6 +276,15 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+    function rss1(){
+                                $.ajax({
+                                    url: 'rss.php'})
+                                    .done (function(data) {
+                                    $('#rss').html(data);
+                                    });
+   }
+    </script>
 
 </body>
 

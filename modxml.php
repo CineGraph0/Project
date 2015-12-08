@@ -66,14 +66,14 @@ file_put_contents('product.xml', $xml->asXML());
 function writeRSS(){
     if (file_exists('rss.xml')) {
         $type = $_POST["type"];
-        $name = $_POST["cname"];
+        $cname = $_POST["cname"];
         $ram = $_POST["ram"];
         $price = $_POST["price"];
         $name = $_POST["name"];
         $contact = $_POST["contact"];
         
-        $title = $cname;
-        $description = $type .", ".$ram.", ".$price. ", ".$name.",".$contact;
+        $title = $type;
+        $description = $cname.",".$ram.",".$price.",".$name.",".$contact;
         
         //loads the xml and returns a simplexml object
         $rssxml = simplexml_load_file('rss.xml');
