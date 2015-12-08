@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Shop Homepage - Start Bootstrap Template</title>
-
+     <link rel="shortcut icon" href="http://a4.mzstatic.com/eu/r30/Purple/v4/55/1d/49/551d49b0-7a27-a05e-fc13-d6e3cd3a7395/icon256.png">
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,7 +23,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+     <style>
+        body{ background-image: url("img/skulls.png");}    
+    </style>
 </head>
 
 <body>
@@ -89,13 +91,13 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="img/sell.png" alt="">
+                                    <img class="slide-image" src="img/Sell.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="img/sell2.png" alt="">
+                                    <img class="slide-image" src="img/Sell.png" alt="">
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="img/sell3.png" alt="">
+                                    <img class="slide-image" src="img/Sell.png" alt="">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -117,21 +119,23 @@
 
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <form action = "modxml.php" method = "post">
-                            Type 
-                            <input type="text" name="type" style = "margin-left: 7px;"/>
+                            Type: 
+                            <input type="text" name="type" style="margin-left:22px;"/>
                             </br>
-                            Computer Name
-                            <input type="text" name="cname"/>
+                            Make:
+                            <input type="text" name="cname" style="margin-left:19px;"/>
                             </br>
-                            RAM
-                            <input type="text" name="ram" style = "margin-left: 7px;"/>
+                            RAM:
+                            <input type="text" name="ram" style="margin-left:22px;"/>
                             </br>
-                            Price
-                            <input type="text" name="price" style = "margin-left: 7px;"/>
-                            Name
-                            <input type="text" name="name" style = "margin-left: 7px;"/>
-                            Contact
-                            <input type="text" name="contact" style = "margin-left: 7px;"/>
+                            Price: 
+                            <input type="text" name="price" style="margin-left:21px;"/>
+                            </br>
+                            Name: 
+                            <input type="text" name="name" style="margin-left:15px;"/>
+                            </br>
+                            Contact: 
+                            <input type="text" name="contact" style="margin-left:4px;"/>
                             
                             <input type="submit" value="Submit"/>
                         </form>

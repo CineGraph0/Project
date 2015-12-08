@@ -4,7 +4,7 @@
 $xml = new DOMDocument;
 $xml->load('product.xml');
 $xsl = new DOMDocument;
-$xsl->substituteEntities = true; 
+$xsl->substituteEntities = true;
 $xsl->load('computer.xsl');
 
 // Configure the transformer
