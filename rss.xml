@@ -7,9 +7,5 @@
         
         
         
-    <item><title>Tablet</title><link>product.xml</link><description>2Gb, €300, Mark McDonald,085-1067245,</description></item><item><title>Laptop</title><link>product.xml</link><description>8gb, €200, David Lawlor,086-7777777,</description></item><item><title>Desktop</title><link>product.xml</link><description>16, 1280, Ian,0909090909090,</description></item><item><title>Random</title><link>product.xml</link><description>800, 93493029394828, Mark McDonald,0876543219,</description></item><item><title>Tablet</title><link>product.xml</link><description>16, 899, Tom,080808080808,Dell</description></item><item><title>Tablet</title><link>product.xml</link><description>16, 899, Tom,080808080808,Dell</description></item><item><title/><link>product.xml</link><description>, , ,,</description></item><item><title>Desktop</title><link>product.xml</link><description>900, 840, Liam,0909090909091234,Dell</description></item><item><title>Laptop</title><link>product.xml</link><description>3Gb, €1200, Mark McDonald,1111,MAC</description></item><item><title>pfpf</title><link>product.xml</link><description>ppp, df, ppp,ooo,ppep</description></item><item><title>Laptop</title><link>product.xml</link><description>16Gb
-400
-mark
-085-1067245
-Acer</description></item></channel>
+    <item><title>Laptop</title><link>product.xml</link><description>Dell,8Gb,€500,Mark Mcdonald,085-1067234</description></item><item><title>Laptop</title><link>product.xml</link><description>Acer,2.5Gb,200,mark,085-1067245</description></item></channel>
 </rss>

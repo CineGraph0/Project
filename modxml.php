@@ -73,7 +73,7 @@ function writeRSS(){
         $contact = $_POST["contact"];
         
         $title = $type;
-        $description = $cname.",".$ram.",".$price.",".$name.",".$contact;
+        $description = $cname.", ".$ram.", ".$price.", ".$name.", ".$contact;
         
         //loads the xml and returns a simplexml object
         $rssxml = simplexml_load_file('rss.xml');

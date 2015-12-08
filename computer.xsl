@@ -3,7 +3,7 @@
 <xsl:template match="/">
   <html>
     <style>
-      table{ height: 100%; width: 100%; margin-left:-10px;}
+      table{ height: 100%; width: 100%;}
     </style>
   <body>
   <h2>Computers</h2>
