@@ -1,0 +1,7 @@
+http://www.w3schools.com/bootstrap/bootstrap_ref_css_buttons.asp
+http://www.smashingmagazine.com/2009/11/designing-css-buttons-techniques-and-resources/
+http://archive.oreilly.com/pub/a/network/2005/07/01/rss.html
+https://responsivedesign.is/resources/data-tables/responsive-tables
+stackoverflow.com
+w3schools.com
+codecademy.com
