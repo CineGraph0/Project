@@ -4,5 +4,5 @@
 <rss version="2.0">
     
     <channel>
-    </channel>
+    <item><title>Laptop</title><link>product.xml</link><description>Samsung, 12Gb, €200, Mark Mcdonald, 085-1067245</description></item><item><title>Dell</title><link>product.xml</link><description>Random, 18, 900, Ian, 090909090909</description></item></channel>
 </rss>

@@ -132,4 +132,4 @@
          <format>Windows</format>
       </external>
    </externals>
-</products>
+<secondhand><type>Laptop</type><computername>Samsung</computername><ram>12Gb</ram><price>€200</price><name>Mark Mcdonald</name><contact>085-1067245</contact></secondhand><secondhand><type>Dell</type><computername>Random</computername><ram>18</ram><price>900</price><name>Ian</name><contact>090909090909</contact></secondhand></products>
