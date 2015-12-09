@@ -4,8 +4,5 @@
 <rss version="2.0">
     
     <channel>
-        
-        
-        
-    <item><title>Laptop</title><link>product.xml</link><description>Dell,8Gb,€500,Mark Mcdonald,085-1067234</description></item><item><title>Laptop</title><link>product.xml</link><description>Acer,2.5Gb,200,mark,085-1067245</description></item></channel>
+        <item><title>Laptop</title><link>product.xml</link><description>Dell,8Gb,€500,Mark Mcdonald,085-1067234</description></item><item><title>Laptop</title><link>product.xml</link><description>Acer,2.5Gb,200,mark,085-1067245</description></item><item><title>Desktop</title><link>product.xml</link><description>Dell XPS, 16Gb, €700, Mark McDonald, 085-1067245</description></item><item><title>Tablet</title><link>product.xml</link><description>Samsung, 2Gb, €250, Mia Hillard, 087-2035432</description></item><item><title>Tablet</title><link>product.xml</link><description>Samsung, 2Gb, €250, Mia Hillard, 087-2035432</description></item><item><title>st</title><link>product.xml</link><description>apple, 50gb, 200, apple, 022222222222</description></item></channel>
 </rss>
